@@ -1,2 +1,2 @@
 # Aula-POO-Java
- Praticas-poo
+ Praticas de Programação Orientada a Objetos.
