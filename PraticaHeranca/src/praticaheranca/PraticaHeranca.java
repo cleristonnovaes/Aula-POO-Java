@@ -1,5 +1,8 @@
 package praticaheranca;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author cleriston
@@ -29,6 +32,16 @@ public class PraticaHeranca {
         b1.setBolsa(12.5f);
         b1.setSexo("M");
         b1.pagarMensal();
+        
+        Tecnico t1 = new Tecnico();
+        t1.setNome("Armando");
+        t1.setIdade(25);
+        t1.setSexo("M");
+        t1.setCurso("Mecatronica");
+        t1.pagarMensal();
+        t1.praticar();
+        
+        
     }
     
 }
