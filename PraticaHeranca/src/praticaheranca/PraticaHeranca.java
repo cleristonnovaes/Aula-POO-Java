@@ -7,32 +7,28 @@ package praticaheranca;
 public class PraticaHeranca {
     
     public static void main(String[] args) {
-       Pessoa p1 = new Pessoa();
-       Aluno p2 = new Aluno();
-       Professor p3 = new Professor();
-       Funcionario p4 = new Funcionario();
+       //Pessoa p1 = new Pessoa(); - classe abstrata não pode ser instanciada.
        
-       p1.setNome("Pedro");
-       p2.setNome("Maria");
-       p3.setNome("Claudio");
-       p4.setNome("Fabiana");
+       Visitante v1 = new Visitante();
+       v1.setNome("Juvenal");
+       v1.setIdade(22);
+       v1.setSexo("M");
        
-       p1.setSexo("M");
-       p4.setSexo("F");
-       
-       p2.setIdade(18);
-       p2.setCurso("Informatica");
-       p3.setSalario(2500.75f);
-       p4.setSetor("Estoque");
-       
-       //p1.receberAumento(550.20f);
-       //p2.mudarTrabalho();
-       //p4.cancelarMat();
-       
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
-        System.out.println(p3.toString());
-        System.out.println(p4.toString());
+        //System.out.println(v1.toString());
+        
+        Aluno a1 = new Aluno();
+        a1.setNome("Claudio");
+        a1.setMatricula(1111);
+        a1.setCurso("Informática");
+        a1.setIdade(16);
+        a1.setSexo("M");
+        a1.pagarMensal();
+        
+        Bolsista b1 = new Bolsista();
+        b1.setNome("Jubileu");
+        b1.setBolsa(12.5f);
+        b1.setSexo("M");
+        b1.pagarMensal();
     }
     
 }
